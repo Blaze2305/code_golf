@@ -57,6 +57,7 @@ def submit_code():
 			filename = str(uid)+str(number)+'.c'
 			data = {'files':[{'name':filename,'content':code,'stdin':inputs}]}
 			req = loads(post(url,data=str(data),headers=headers).text)
+			app.logger.info(req)
 			if(req['error']):
 				flag = False
 				break
