@@ -1,3 +1,4 @@
 firebase-admin
 Flask
+gunicorn
 requests
