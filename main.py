@@ -13,7 +13,7 @@ url='https://run.glot.io/languages/c/latest'
 cred = credentials.Certificate("code_golf.json")
 firebase_admin.initialize_app(cred)
 db = firestore.client()
-users_collection = db.collection('users')
+scores_collection = db.collection('scores')
 
 app = Flask(__name__)
 @app.route('/api/v1/test',methods=['POST'])
@@ -62,7 +62,7 @@ def submit_code():
 	if(flag):
 		file = minify(code)
 		data = {'question_number':number,'code':source['code'],'length':len(file)}
-		users_collection.document(f'{source["user_id"]}').set(data)
+		scores_collection.document(f'{source["user_id"]}').set(data)
 
 	return(jsonify({'passed_all':flag}))
 
