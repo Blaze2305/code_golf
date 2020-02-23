@@ -74,5 +74,5 @@ def minify(code):
 	file = file.replace('\n','')
 	return(file)
 	
-app.run(host='0.0.0.0',port='5000',debug=True)
+app.run()
 
