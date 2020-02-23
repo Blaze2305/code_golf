@@ -77,6 +77,7 @@ def minify(code):
 	file = file.replace(' ','')
 	file = file.replace('\n','')
 	return(file)
-	
-app.run(threaded=True,port=8080)
+
+if(__name__=="__main__"):
+	app.run(threaded=True)
 
