@@ -37,6 +37,10 @@ def compile_code():
 
 		return jsonify(back)
 
+@app.route('/api/v1/check')
+def check():
+	return("HELLO THERE")
+
 @app.route('/api/v1/submit',methods=["POST"])
 def submit_code():
 	source = request.get_json()
@@ -74,5 +78,5 @@ def minify(code):
 	file = file.replace('\n','')
 	return(file)
 	
-app.run()
+app.run(threaded=True,port=5000)
 
