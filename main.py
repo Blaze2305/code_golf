@@ -55,7 +55,7 @@ def submit_code():
 		if(flag):
 			inputs = input_cases[i]
 			filename = str(uid)+str(number)+'.c'
-			data = {'files':[{'name':filename,'content':code,'stdin':inputs}]}
+			data = {'files':[{'name':filename,'content':code}],'stdin':inputs}
 			req = loads(post(url,data=str(data),headers=headers).text)
 			app.logger.info(req)
 			if(req['error']):
