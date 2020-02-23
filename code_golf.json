@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "code-golf-inspiro-ieee",
+  "private_key_id": "ca531f72cd3b755dc5c4f56498bc00ee3cd6393f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC4ooUUEQclWu1Z\nuMVNRkflQfU62eM5Uj/T3TccLDqzzuD9VtDhqnAFoyZg2NhR1MTaS9HpKzWIFPOF\ne/TyhYM1JJA1iDCI/qgAlNs7zNiLO4zdOb7MAwGF+sk6jz6ogR+smahL1iCxn6Ko\nj3RdBwXALpG3duSCS8MDORYqMTcOzmpQT2JscnxVTFIyCGrkwCWzMNkg58hhD6BK\n3pIP9KxyOgJcxjhleT6bMLAV/6NaM1QvtH3s1ey4eSa0tAHnHOLYkdbgvf+R86wt\npaHLC4S7sadJId0lJyRR37SxeevF5Adgk98qQhyCtIcxjtU+SEwgwBnKD1KjuJzg\niakY6kEDAgMBAAECggEACmYEzrOCzoTHd1Ujr410wSGs2QqqdHEAbUM5Nln7WGMf\nYsU/8GWz921P3QZ5cGpmR9EbWmF3m1lquarYicwhLp4HjSxFZ4HIHnhDvKN10qmg\n7lixOTY2IMCWErk8kyrqiMMCqnq9zqMp+wpRSGf71+4HgOiuR/RSYF0XtXqeGjRH\nY+5fyql3s7B5wT+dvuRSHaZQc38kUgnVnJgkZJSZpAGCwq0oA2CPDy681jBi+wUn\nBsx1kGmUUGxkA8tMmxhHOwW1IvqNDUNaSm2Pj6JKF/rSi9mUaHxexDvPUMVR3IZ7\nu+Ko8i/dIoK6jfqYnJwthQCjPmn+KUpQqJErlqYniQKBgQDeHIIeX7qrNSEiSVlP\nB3C5mhsEsC99IorPoTVKavO6OSbcyLdVP3vM1VpAuIdTmOYABUEPHXwXgzcMUwsd\nW1swbcd2edei5Oxb4amDQxlUmMEexKNo+P4jm9t2fW6/WLBzWecAbwYMxeYOoyXP\nr0pPjCVYJEvczDapcIOBaaiM5wKBgQDUzjV16l4uZrGAqSBe5fmyA0btoV418Fd6\nstVkcoL6FnRnG8wd/wpiUuz5mbn7UXznsYbCL+MccDufU+e0CZRz+WUIndpcaU6k\n/35OBxblsmCmBHNWsNtxce++i2P6JyBHXCqO6TtqOT56ugahmXrSZfwv7Ei57oBb\n99a0E9frhQKBgENZIZtUK6X+Vi2vUAVGnEerEsY5Ji0rbCvJFf+aroypB7+qnOyc\nc02I4/T7/wy6MAORlEihCB+ZCfgStiwQp3Xn07N4/onGIGU758qFbgjYyLYrqeEK\nnwTtHX6wSgR7QAW6HPFkuNDmsPt/PNfcrwuv0yMG3nn08h4un7F9+D3BAoGAHOcI\n4cP8GKc/8m6GA/2OJTxGtN2W0xKafwKs8uCOo3LLSnm/Bk/uVB5ZKylS1ixiH4HA\nAL3KRcGEh4Y40P4AGKRFsZ7m2mg/Ey/UMrrJxFauw72VALAyjbzgx+tcn8wSmT6O\nVSyeMjYmIzsCzY3v3YWWc9fOpNocuuD1Wy3axJUCgYEAgrwE6klBdZyuGtuEAt42\nKvIJ6GJ7vI5xDA/hzYB4fz/UIxULcq9xdecki7RdoWRnHojGIDyGZPiYZ6CFpgM1\nP6lXLExLBnPT7gK8KjL/NZTVzp1Yu9Xhl1H1aUjpm7mwN36htMtUlFFojbl6a6rm\nFWOp6orlb2jhB803a1qcCFo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-ak5wh@code-golf-inspiro-ieee.iam.gserviceaccount.com",
+  "client_id": "109942722480502298681",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-ak5wh%40code-golf-inspiro-ieee.iam.gserviceaccount.com"
+}
