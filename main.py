@@ -78,5 +78,5 @@ def minify(code):
 	file = file.replace('\n','')
 	return(file)
 	
-app.run(threaded=True,port=5000)
+app.run(threaded=True,port=8080)
 
