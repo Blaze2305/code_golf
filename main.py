@@ -66,10 +66,21 @@ def submit_code():
 				break
 	if(flag):
 		file = minify(code)
-		data = {'question_number':number,'code':source['code'],'length':len(file)}
-		scores_collection.document(f'{source["user_id"]}').set(data)
-
+		user_doc = scores_collection.document(f"{source['user_id']}").collection(f'questions')
+		if(user_doc.document(f'{number}').get().exists):
+			length = user_doc.document(f'{number}').get().to_dict()['length']
+			if(len(file)<length):
+				data = {'code':source['code'],'length':len(file)}
+				user_doc.document(f'{number}').set(data)
+		else:
+			data = {'code':source['code'],'length':len(file)}
+			user_doc.document(f'{number}').set(data)
+			
 	return(jsonify({'passed_all':flag}))
+
+@app.route('/api/v1/complete',methods=['GET'])
+def complete_contest():
+	pass
 
 
 def minify(code):
@@ -78,6 +89,7 @@ def minify(code):
 	file = file.replace(' ','')
 	file = file.replace('\n','')
 	return(file)
+
 
 if(__name__=="__main__"):
 	app.run(threaded=True)
