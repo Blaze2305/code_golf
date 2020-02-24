@@ -17,7 +17,7 @@ db = firestore.client()
 scores_collection = db.collection('scores')
 
 app = Flask(__name__)
-cors = CORS(app)
+cors = CORS(app,supports_credentials = True)
 @app.route('/api/v1/test',methods=['POST'])
 def compile_code():
 	if(request.method=='POST'):
