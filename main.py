@@ -4,6 +4,7 @@ from flask import Flask,jsonify,request
 from requests import post
 from json import loads
 import test_cases
+from flask_cors import CORS
 
 token = '60d62a9c-de2a-4efa-b0dc-45f5c13f4459'
 headers={"Authorization":f"Token {token}","Content-type":"application/json"}
@@ -16,6 +17,7 @@ db = firestore.client()
 scores_collection = db.collection('scores')
 
 app = Flask(__name__)
+cors = CORS(app)
 @app.route('/api/v1/test',methods=['POST'])
 def compile_code():
 	if(request.method=='POST'):
@@ -78,9 +80,10 @@ def submit_code():
 			
 	return(jsonify({'passed_all':flag}))
 
-@app.route('/api/v1/complete',methods=['GET'])
-def complete_contest():
-	pass
+# @app.route('/api/v1/complete',methods=['GET'])
+# def complete_contest():
+# 	top={1:'',2:'',3:''}
+# 	users = scores_collection.stream()
 
 
 def minify(code):
